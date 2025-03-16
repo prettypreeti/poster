@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .box {
+            width: 140px;
+            height: 450px;
+            border: 5px double blue;
+            background-color: black;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+            padding-top: 50px;
+            position: relative;
+            overflow: hidden;
+            /* margin-top: 50px; */
+        }
+        .box::before {
+            /* content: url('./images/netflix3.png'); Replace with the path to your logo image */
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 40px;
+            height: 40px;
+            background-size: cover;
+            border-radius: 50%;
+            border: 2px solid blue;
+        }
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        h2, h3, h6 {
+            margin: 10px 0;
+            font-family: 'Arial', sans-serif;
+        }
+        h2 {
+            color: yellow;
+            font-size: 1.5em;
+            font-weight: bold;
+            
+        }
+        h2:hover {
+            color: red;
+        }
+        h3 {
+            color: #ccc;
+            font-size: 1.2em;
+            padding-top: 40px;
+
+        }
+        h6 {
+            color: #aaa;
+            font-size: 1em;
+        }
+        img{
+            width: 600px;
+            height: 100px;
+            align-items: center;
+            /* margin-left: 0px; */
+            /* margin-right: 70px; */
+
+            /* padding-top: 10px; */
+        }
+        .img{
+            width: 100px;
+            height: 100px;
+            align-items: center;
+            margin-left: 10px;
+            /* margin-right: 70px; */
+            /* padding-top: 10px; */
+        }
+
+        @media (max-width: 600px) {
+            .box {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .img2{
+            width: 100px;
+            height: 100px;
+            align-items: center;
+            margin-left: 10px;
+            /* margin-right: 70px; */
+            /* padding-top: 10px; */
+        }
+        .img4{
+            width: 100px;
+            height: 100px;
+            align-items: center;
+            margin-left: 5px;
+            /* margin-right: 70px; */
+            /* padding-top: 10px; */
+        }
+        .img3{
+            width: 100px;
+            height: 100px;
+            align-items: center;
+            margin-left: 5px;
+            /* margin-right: 70px; */
+            /* padding-top: px; */
+        }
+        .img5{
+            width: 100px;
+            height: 100px;
+            align-items: center;
+            margin-left: 5px;
+            /* margin-right: 70px; */
+            /* padding-top: 10px; */
+        }
+        .img6{
+            width: 100px;
+            height: 100px;
+            align-items: center;
+            margin-left: 5px;
+            /* margin-right: 70px; */
+            /* padding-top: 10px; */
+        }
+    </STYLE>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box">
+            <img class="img"src="images/net.jpg" alt="">
+            <!-- <h2>NETFLIX PREMIUM</h2> -->
+            <h6>2 screen private</h6>
+            <h3>1 Month 126rs</h3>
+            <h3>3 Months 280rs</h3>
+            <h3>6 Months 420rs</h3>
+            <h3>12 Months 700rs</h3>
+        </div>
+        <div class="box">
+            <img class="img1" src="./images/youtube.png" alt="">
+            <!-- <h2>YOUTUBE PREMIUM</h2> -->
+            <h3>1 Month 70rs</h3>
+            <h3>3 Months 120rs</h3>
+            <h3>6 Months 210rs</h3>
+            <h3>12 Months 420rs</h3>
+        </div>
+        <div class="box">
+            <img class="img2" src="./images/solnylive2.jpg" alt="">
+            <!-- <h2>SONYLIVE</h3> -->
+            <h3>1 Month 98rs</h3>
+            <h3>3 Months 210rs</h3>
+            <h3>6 Months 392rs</h3>
+            <h3>12 Months 560rs</h3>
+        </div>
+        <div class="box">
+            <img class="img3" src="./images/diney.webp" alt="">
+            <!-- <h2>DISNEY+ HOTSTAR</h3> -->
+            <h3>1 Month 98rs</h3>
+            <h3>3 Months 210rs</h3>
+            <h3>6 Months 350rs</h3>
+            <h3>12 Months 660rs</h3>
+        </div>
+    
+        <div class="box">
+            <img  class="img4"src="./images/prime.jpg" alt="">
+            <!-- <h2>PRIME VIDEO</h2> -->
+            <h3>1 Month 70rs</h3>
+            <h3>3 Months 180rs</h3>
+            <h3>6 Months 280rs</h3>
+            <h3>12 Months 420rs</h3>
+        </div>
+        <div class="box">
+            <img class="img5" src="./images/ZEE5-Emblem.png" alt="">
+            <!-- <h2>ZEE 5 PREMIUM</h2> -->
+            <h3>1 Month 70rs</h3>
+            <h3>3 Months 210rs</h3>
+            <h3>6 Months 252rs</h3>
+            <h3>12 Months 392rs</h3>
+        </div>
+        <div class="box">
+            <img class="img6" src="images/jio.avif" alt="">
+            <!-- <h2>JIO CINEMA</h2> -->
+            <h3>1 Month 28rs</h3>
+            <h3>3 Months 70rs</h3>
+            <h3>6 Months 182rs</h3>
+            <h3>12 Months 280rs</h3>
+        </div>
+    </div>
+</body>
+</html>
